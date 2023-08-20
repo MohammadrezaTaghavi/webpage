@@ -247,9 +247,6 @@ a{
     background-color: var(--white);
     color: var(--dark);
 }
-.nav-menu__link--border{
-
-}
 /* 
 
 
@@ -364,9 +361,31 @@ a{
 .header__link{
     background-color: var(--orange);
 }
+/* 
+
+
+
+============
+    main
+============
+
+
+
+*/
 .main{
     padding: 4rem 0;
 }
+/* 
+
+
+
+================
+    services
+================
+
+
+
+*/
 .services{
     margin-top: -20rem;
     display: flex;
@@ -397,6 +416,73 @@ a{
     font-size: 1.8rem;
     margin: 1.5rem 0 0.6rem 0;
 }
-.service__caption{
+.destinations{
+    text-align: center;
+    margin: 8rem auto 0 auto;
+}
+.destinations__logo{
+    margin-bottom: 3rem;
+}
+.destinations__title{
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.destinations__places{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+.place{
+    width: 30rem;
+    flex-grow: 1;
+    background-color: var(--white);
+    margin: 0 1rem 1rem 0;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+}
+.place__banner{
+    position: relative;
+}
+.place__img{
+    border-radius: 2rem;
+}
+.place__like{
 
+}
+.place__like-icon{
+
+}
+.place__price{
+    background-color: var(--white);
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+    left: 0;
+    width: 14rem;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 2rem;
+    padding: 1rem 0;
+}
+.place__price-text{
+    color: var(--orange);
+    font-family: var(--primary-font-md);
+}
+.place__title{
+    font-family: var(--secondary-font);
+    margin-bottom: 0.8rem;
+}
+.place__caption{
+    color: #3B3735;
+}
+.place__link{
+    color: #8D8D8D;
+    background-color: rgba(141,141,141,10%);
+    margin: 2.5rem 0;
+}
+.destinations__btn{
+    background-color: transparent;
+    color: var(--orange);
+    border: 1px solid var(--orange);
 }
