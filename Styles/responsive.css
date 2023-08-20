@@ -1,0 +1,42 @@
+@media (max-width: 380px) {
+    .header__title{
+        font-size: 4rem;
+    }
+}
+
+
+@media (min-width: 576px) {
+
+}
+
+
+@media (min-width: 768px) {
+    .nav__btn{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+    .nav-menu{
+        display: none;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .nav__links{
+        display: block;
+    }
+    .header__caption{
+        max-width: 50rem;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    
+}
+
+@media (min-width: 1400px) {
+    
+}
