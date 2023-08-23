@@ -166,6 +166,7 @@ a{
     padding: 2.5rem;
     width: 25rem;
     transition: all 250ms ease-in-out;
+    z-index: 1;
 }
 .nav-menu--open{
     left: 0;
@@ -390,6 +391,8 @@ a{
     margin-top: -20rem;
     display: flex;
     flex-wrap: wrap;
+    margin-right: -1rem;
+    margin-left: -1rem;
 }
 .service{
     background-color: var(--white);
@@ -397,7 +400,7 @@ a{
     border-radius: 2rem;
     width: 30rem;
     height: 26rem;
-    padding: 0 4rem;
+    padding: 0 2rem;
     text-align: center;
     margin-bottom: 2rem;
     display: flex;
@@ -418,71 +421,103 @@ a{
 }
 .destinations{
     text-align: center;
-    margin: 8rem auto 0 auto;
+    padding: 6rem 0;
 }
 .destinations__logo{
-    margin-bottom: 3rem;
+    width: 8rem;
+    height: 8rem;
 }
 .destinations__title{
     font-family: var(--secondary-font);
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 3rem;
+    max-width: 36rem;
+    margin: 3rem auto;
 }
 .destinations__places{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
 }
 .place{
     width: 30rem;
     flex-grow: 1;
     background-color: var(--white);
-    margin: 0 1rem 1rem 0;
     border-radius: 2rem;
-    padding: 1rem 2rem;
+    padding: 2rem;
+    color: var(--dark);
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    overflow: hidden;
 }
 .place__banner{
     position: relative;
+    height: 18rem;
 }
 .place__img{
+    width: 100%;
+    height: 100%;
     border-radius: 2rem;
+    object-fit: cover;
 }
 .place__like{
-
+    background-color: var(--white);
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
 }
 .place__like-icon{
-
+}
+.place__like-icon--fill{
+    fill: var(--orange);
 }
 .place__price{
     background-color: var(--white);
     position: absolute;
-    bottom: 1rem;
+    bottom: -0.8rem;
     right: 0;
     left: 0;
-    width: 14rem;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 2rem;
-    padding: 1rem 0;
+    width: 12rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
 }
 .place__price-text{
     color: var(--orange);
     font-family: var(--primary-font-md);
+    text-align: center;
 }
 .place__title{
     font-family: var(--secondary-font);
-    margin-bottom: 0.8rem;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .place__caption{
-    color: #3B3735;
+    margin-bottom: 3rem;
 }
 .place__link{
     color: #8D8D8D;
-    background-color: rgba(141,141,141,10%);
-    margin: 2.5rem 0;
+    background-color: rgba(141,141,141,0.1);
 }
 .destinations__btn{
     background-color: transparent;
     color: var(--orange);
     border: 1px solid var(--orange);
+    transition: all 100ms ease-in;
+}
+.destinations__btn:hover{
+    background-color: var(--orange);
+    color: var(--app-bg );
 }
