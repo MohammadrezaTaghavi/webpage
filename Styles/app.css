@@ -1,5 +1,6 @@
 :root{
-    --orange: #E76F51 ;
+    --primary-color: #E76F51 ;
+    --secondary-color: #F8E1DB ;
     --white: #fff ;
     --grey: #D2D2D2 ;
     --dark: #3B3735 ;
@@ -36,7 +37,6 @@ a{
 
 */
 .btn{
-    display: block;
     border-radius: 10rem; 
     color: var(--white);
     background-color: var(--dark);
@@ -137,7 +137,7 @@ a{
     left: 0;
     width: 4rem;
     height: 0.3rem;
-    background-color: var(--orange);
+    background-color: var(--primary-color);
     transform: rotate(45deg);
     border-radius: 10rem;
     margin: 0 auto;
@@ -212,7 +212,7 @@ a{
     left: 0;
     bottom: 0;
     margin: auto;
-    background-color: var(--orange);
+    background-color: var(--primary-color);
     width: 0;
     height: 0.3rem;
     border-radius: 5rem;
@@ -299,7 +299,7 @@ a{
     cursor: pointer;
 }
 .nav__btn-line{
-    background-color: var(--orange);
+    background-color: var(--primary-color);
     width: 3rem;
     height: 0.3rem;
     border-radius: 2rem;
@@ -310,7 +310,7 @@ a{
 .nav__btn-line::after{
     content: " ";
     position: absolute;
-    background-color: var(--orange);
+    background-color: var(--primary-color);
     width: 3rem;
     height: 0.3rem;
     border-radius: 2rem;
@@ -360,7 +360,7 @@ a{
     margin: 0 auto 2rem auto;
 }
 .header__link{
-    background-color: var(--orange);
+    background-color: var(--primary-color);
 }
 /* 
 
@@ -419,9 +419,21 @@ a{
     font-size: 1.8rem;
     margin: 1.5rem 0 0.6rem 0;
 }
+/* 
+
+
+
+====================
+    destinations
+====================
+
+
+
+*/
 .destinations{
     text-align: center;
     padding: 6rem 0;
+    color: var(--dark);
 }
 .destinations__logo{
     width: 8rem;
@@ -439,13 +451,23 @@ a{
     margin-left: -1rem;
     margin-right: -1rem;
 }
+/* 
+
+
+
+=============
+    place
+=============
+
+
+
+*/
 .place{
     width: 30rem;
     flex-grow: 1;
     background-color: var(--white);
     border-radius: 2rem;
     padding: 2rem;
-    color: var(--dark);
     margin-bottom: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -477,7 +499,7 @@ a{
 .place__like-icon{
 }
 .place__like-icon--fill{
-    fill: var(--orange);
+    fill: var(--primary-color);
 }
 .place__price{
     background-color: var(--white);
@@ -491,7 +513,7 @@ a{
     padding: 0.5rem 2rem;
 }
 .place__price-text{
-    color: var(--orange);
+    color: var(--primary-color);
     font-family: var(--primary-font-md);
     text-align: center;
 }
@@ -511,13 +533,87 @@ a{
     color: #8D8D8D;
     background-color: rgba(141,141,141,0.1);
 }
+/* 
+
+
+
+=========================
+    destinations btn
+=========================
+
+
+
+*/
 .destinations__btn{
     background-color: transparent;
-    color: var(--orange);
-    border: 1px solid var(--orange);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     transition: all 100ms ease-in;
+    margin-top: 3rem;
 }
 .destinations__btn:hover{
-    background-color: var(--orange);
+    background-color: var(--primary-color);
     color: var(--app-bg );
+}
+.newsletter{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: var(--secondary-color);
+    border-radius: 2rem;
+    color: var(--dark);
+    padding: 3rem 2rem;
+    text-align: center;
+    margin: 6rem 0;
+}
+.newsletter__content{
+}
+.newsletter__title{
+    font-family: var(--secondary-font);
+    font-size: 3rem ;
+    margin: 1.5rem auto;
+}
+.newsletter__caption{
+    font-family: var(--primary-font-md);
+}
+.newsletter__email-box{
+    background-color: var(--white);
+    border-radius: 2rem;
+    height: 8rem;
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+}
+.newsletter__form{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.newsletter__email-icon{
+    flex-shrink: 0;
+}
+.newsletter__input{
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: #8D8D8D;
+}
+.newsletter__submit{
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.newsletter__banner{
+}
+.newsletter__img{
+    width: 100%;
 }
