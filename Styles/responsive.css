@@ -8,6 +8,16 @@
     .newsletter__title{
         max-width: 16rem;
     }
+    .footer{
+        text-align: center;
+    }
+    .footer-list{
+        margin-left: 0;
+        width: 100%;
+    }
+    .footer__right{
+        justify-content: center;
+    }
 }
 
 
@@ -38,6 +48,14 @@
     .newsletter__banner{
         flex-basis: 40%;
     }
+    .newsletter::before{
+        width: auto;
+        height: auto;
+        background-size: auto;
+        background-position: center left;
+        top: -5rem;
+        left: -40rem;
+    }
 }
 
 
@@ -54,10 +72,32 @@
     .newsletter__title{
         margin-bottom: 0;
     }
+    .footer-app{
+        display: block;
+    }
+    .footer-app--mobile{
+        display: none;
+    }
+    .footer__wrapper{
+        display: flex;
+    }
+    .footer__left{
+        max-width: 50rem;
+    }
+    .footer__scroll{
+        left: auto;
+    }
+    .newsletter::before{
+        top: -10rem;
+        left: -30rem;
+    }
 }
 
 
 @media (min-width: 1200px) {
+    .header{
+        min-height: 80rem;
+    }
     .newsletter{
         justify-content: space-between;
     }
@@ -68,6 +108,17 @@
     .newsletter__banner{
         flex-basis: auto;
         width: 42rem;
+    }
+    .footer__wrapper{
+        justify-content: space-between;
+    }
+    .footer-list{
+        margin-bottom: 0;
+        margin-left: 2rem;
+    }
+    .newsletter::before{
+        top: -15rem;
+        left: -15rem;
     }
 }
 
